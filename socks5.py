@@ -7,6 +7,7 @@ import urllib.parse
 import urllib.request
 import collections
 import time
+import sys
 
 print ('------------------------------------------')
 print ('\033[1;31mSOCKS5   PARA   TELEGRAM')
