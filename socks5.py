@@ -11,7 +11,6 @@ import time
 print ('------------------------------------------')
 print ('\033[1;31mSOCKS5   PARA   TELEGRAM')
 print ('MODIFICADO POR @GUGUHOMEMDELETRAS')
-print ('USUARIO:   HUNTER   SENHA:  HUNTER')
 print ('CREDITOS @LindoFuLL||@PAYLOADHTTP')
 print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN')
 print ('------------------------------------------')
@@ -23,9 +22,10 @@ print ('PARA ACESSAR O MENU DE CONTROLE DIGITE : nano socks5.py')
 print ('\033[1;31mPARA MODIFICAR VOCE PRECISA ESTAR COM O SOCKS5 DESLIGADO! ')
 print ('------------------------------------------')
 
-PORT = input('\033[1;96mDIGITE UMA PORTA PARA O SOCKS5 EX (443): ')
+PORT = input('\033[1;96mDIGITE UMA PORTA PARA O SOCKS5 EX (443):443 ')
 MYIP = input('\033[1;35mDIGITE O IP OU DOMINIO DO SEU SERVIDOR: ')
-USERS = {"HUNTER": "HUNTER"}
+USERS = input('\033[1;33mDIGITE UM NOME DE USUARIO: ')
+PASS = input('\033[1;32mDIGITE UMA SENHA: ')
 
 BLOCK_NON_TG_HOSTS = True
 HIDE_ERRORS_BEFORE_AUTH = True
@@ -296,7 +296,7 @@ def print_tg_info():
     
     for user in USERS:
         params = {
-            "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
+            "server": MYIP, "port": PORT, "user": user, "pass": PASS[PASS]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
 
