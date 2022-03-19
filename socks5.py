@@ -12,7 +12,6 @@ print ('------------------------------------------')
 print ('\033[1;31mSOCKS5   PARA   TELEGRAM')
 print ('MODIFICADO POR @GUGUHOMEMDELETRAS')
 print ('CREDITOS @LindoFuLL||@PAYLOADHTTP')
-print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN')
 print ('------------------------------------------')
 
 print ('------------------------------------------')
@@ -299,6 +298,7 @@ def print_tg_info():
             "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
+        print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN(SEGUNDO PLANO')
 
         
 def main():
