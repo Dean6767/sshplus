@@ -24,8 +24,7 @@ print ('------------------------------------------')
 
 PORT = input('\033[1;96mDIGITE UMA PORTA PARA O SOCKS5 EX (443):443 ')
 MYIP = input('\033[1;35mDIGITE O IP OU DOMINIO DO SEU SERVIDOR: ')
-USERS = input('\033[1;33mDIGITE UM NOME DE USUARIO: ')
-PASS = input('\033[1;32mDIGITE UMA SENHA: ')
+USERS = input('\033[1;33mDIGITE UM NOME PARA USUARIO E SENHA: ')
 
 BLOCK_NON_TG_HOSTS = True
 HIDE_ERRORS_BEFORE_AUTH = True
@@ -296,7 +295,7 @@ def print_tg_info():
     
     for user in USERS:
         params = {
-            "server": MYIP, "port": PORT, "user": user[USERS], "pass": pass[PASS]
+            "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
 
