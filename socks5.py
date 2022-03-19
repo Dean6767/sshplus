@@ -296,7 +296,7 @@ def print_tg_info():
     
     for user in USERS:
         params = {
-            "server": MYIP, "port": PORT, "user": user, "pass": PASS
+            "server": MYIP, "port": PORT, "user": user[USERS], "pass": pass[PASS]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
 
