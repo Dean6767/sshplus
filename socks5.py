@@ -23,7 +23,7 @@ print ('PARA MODIFICAR VOCE PRECISA ESTAR COM O SOCKS5 DESLIGADO! ')
 print ('------------------------------------------')
 
 PORT = input('\033[34mDIGITE UMA PORTA PARA O SOCKS5 EX (443): ')
-my_ip = input('\033[34mDIGITE O IP DO SEU SERVIDOR: ')
+MYIP = input('\033[34mDIGITE O IP DO SEU SERVIDOR: ')
 USERS = {"HUNTER": "HUNTER"}
 
 BLOCK_NON_TG_HOSTS = True
@@ -295,7 +295,7 @@ def print_tg_info():
     
     for user in USERS:
         params = {
-            "server": my_ip, "port": PORT, "user": user, "pass": USERS[user]
+            "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
 
