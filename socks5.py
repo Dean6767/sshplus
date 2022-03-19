@@ -297,9 +297,8 @@ def print_tg_info():
         params = {
             "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
-        print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
-       
-        print('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN(SEGUNDO PLANO)'
+        print("tg://socks?" + urllib.parse.urlencode(params), flush=True)      
+        print('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN'
 
         
 def main():
