@@ -17,7 +17,7 @@ print ('------------------------------------------')
 print ('------------------------------------------')
 print ('USERS : ALTERA USUARIO E SENHA')
 print ('PORT : ALTERA A PORTA DO SOCKS5')
-print ('PARA ACESSAR O MENU DE CONTROLE DIGITE : nano socks5.py')
+print (''\033[1;32mPARA ACESSAR O MENU DE CONTROLE DIGITE : ' nano socks5.py')
 print ('\033[1;31mPARA MODIFICAR VOCE PRECISA ESTAR COM O SOCKS5 DESLIGADO! ')
 print ('------------------------------------------')
 print ('\033[1;95mO USUARIO E SENHA PADRAO NA ORDEM: DEAN2 & HUNTER')
@@ -298,7 +298,9 @@ def print_tg_info():
             "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
-        print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN(SEGUNDO PLANO')
+              
+              
+        print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN(SEGUNDO PLANO)'
 
         
 def main():
