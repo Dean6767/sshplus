@@ -9,21 +9,22 @@ import collections
 import time
 
 print ('------------------------------------------')
-print ('SOCKS5   PARA   TELEGRAM')
+print ('\033[1;31mSOCKS5   PARA   TELEGRAM')
 print ('MODIFICADO POR @GUGUHOMEMDELETRAS')
 print ('USUARIO:   HUNTER   SENHA:  HUNTER')
 print ('CREDITOS @LindoFuLL||@PAYLOADHTTP')
-print ('APERTE  CTRL --> A --> D  PARA DEIXAR RODANDO EM SCREEN')
+print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN')
 print ('------------------------------------------')
 
 print ('------------------------------------------')
 print ('USERS : ALTERA USUARIO E SENHA')
 print ('PORT : ALTERA A PORTA DO SOCKS5')
-print ('PARA MODIFICAR VOCE PRECISA ESTAR COM O SOCKS5 DESLIGADO! ')
+print ('PARA ACESSAR O MENU DE CONTROLE DIGITE : nano socks5.py')
+print ('\033[1;31mPARA MODIFICAR VOCE PRECISA ESTAR COM O SOCKS5 DESLIGADO! ')
 print ('------------------------------------------')
 
-PORT = input('\033[34mDIGITE UMA PORTA PARA O SOCKS5 EX (443): ')
-MYIP = input('\033[34mDIGITE O IP DO SEU SERVIDOR: ')
+PORT = input('\033[1;96mDIGITE UMA PORTA PARA O SOCKS5 EX (443): ')
+MYIP = input('\033[1;35mDIGITE O IP OU DOMINIO DO SEU SERVIDOR: ')
 USERS = {"HUNTER": "HUNTER"}
 
 BLOCK_NON_TG_HOSTS = True
@@ -297,7 +298,7 @@ def print_tg_info():
         params = {
             "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
-        print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
+        print("COPIE SUA CONFIGURACAO: tg://socks?" + urllib.parse.urlencode(params), flush=True)
 
         
 def main():
