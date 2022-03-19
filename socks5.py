@@ -298,7 +298,7 @@ def print_tg_info():
         params = {
             "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
-        print("COPIE SUA CONFIGURACAO: tg://socks?" + urllib.parse.urlencode(params), flush=True)
+        print("tg://socks?" + urllib.parse.urlencode(params), flush=True)
 
         
 def main():
