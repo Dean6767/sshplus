@@ -7,7 +7,6 @@ import urllib.parse
 import urllib.request
 import collections
 import time
-import sys
 
 print ('------------------------------------------')
 print ('\033[1;31mSOCKS5   PARA   TELEGRAM')
@@ -24,7 +23,7 @@ print ('\033[1;95mO USUARIO E SENHA PADRAO NA ORDEM: DEAN2 & HUNTER')
 print ('\033[1;32mAPERTE  CTRL --> A --> D  PARA DEIXAR RODANDO O SOCKS5 EM SCREEN')
 print ('------------------------------------------')
 
-PORT = input('\033[1;96mDIGITE UMA PORTA PARA O SOCKS5 EX (443):443 ')
+PORT = input('\033[1;96mDIGITE UMA PORTA PARA O SOCKS5 EX (443): ')
 MYIP = input('\033[1;35mDIGITE O IP OU DOMINIO DO SEU SERVIDOR: ')
 USERS = {"DEAN2": "HUNTER"}
 
@@ -300,7 +299,6 @@ def print_tg_info():
             "server": MYIP, "port": PORT, "user": user, "pass": USERS[user]
         }
         print("tg://socks?" + urllib.parse.urlencode(params), flush=True)      
-
         
 def main():
     init_stats()
