@@ -9,9 +9,8 @@ import collections
 import time
 
 print ('------------------------------------------')
-print ('\033[1;31mSOCKS5   PARA   TELEGRAM')
-print ('MODIFICADO POR @GUGUHOMEMDELETRAS')
-print ('CREDITOS @LindoFuLL||@PAYLOADHTTP')
+print ('\033[1;31mSOCKS5   FOR   TELEGRAM')
+print ('MODIFIED BY @GUGUHOMEMDELETRAS')
 print ('------------------------------------------')
 
 print ('------------------------------------------')
