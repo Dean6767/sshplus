@@ -1,6 +1,6 @@
 #!/bin/bash
 
-     apt update
+     apt update -y
 	 cd /root
 	 echo "Instalando Proxy"
 	 curl -L https://mirrors.host900.com/https://raw.githubusercontent.com/snail007/goproxy/master/install_auto.sh | bash
