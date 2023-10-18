@@ -36,3 +36,4 @@ def proxy_request():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5454)
+    #exemplo de uso: http://domain.com:5454/proxy?url=http://domain2.com:8888/server/online_app
